@@ -1,0 +1,39 @@
+{
+    "name": "Parameter",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "enable",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "application",
+            "otherEntityRelationshipName": "parameter",
+            "relationshipName": "application",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191015102307",
+    "entityTableName": "parameter",
+    "dto": "no",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
